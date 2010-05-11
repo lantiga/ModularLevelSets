@@ -2,6 +2,15 @@ ModularLevelSets
 
 A modular implementation of level sets in ITK building on the existing level sets framework, offering flexible switching between solvers and easy creation of new evolution terms.
 
+Build using CMake, the usual ITK way.
+
+See ModularLevelSets.cxx for examples of usage. 
+
+A few evolution terms have been written, more will have to follow. Terms can be easily implemented by just writing one class (see for instance itkLevelSetThresholdTerm.h), and they can be added by just including the file and adding 
+levelSetFunction->AddTerm(thresholdTerm);
+
+Performance is probably reduced compared to the ITK implementation, but no efforts towards optimization have been made yet (apart from caching terms). On the other hand, ModularLevelSets offers a very convenient framework for experimenting with new terms of the level sets evolution equation and for experimenting with different solvers.
+
 
 Luca Antiga, PhD
 Principal Scientist, Orobix Srl
