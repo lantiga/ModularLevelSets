@@ -1,0 +1,9 @@
+ModularLevelSets
+
+A modular implementation of level sets in ITK building on the existing level sets framework, offering flexible switching between solvers and easy creation of new evolution terms.
+
+
+Luca Antiga, PhD
+Principal Scientist, Orobix Srl
+luca.antiga@orobix.com
+
